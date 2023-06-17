@@ -19,7 +19,9 @@ class productListViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        productBackgroundView.layer.cornerRadius = 15
+        productImageView.layer.cornerRadius = 10
+        self.productBackgroundView.backgroundColor = .systemGray5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

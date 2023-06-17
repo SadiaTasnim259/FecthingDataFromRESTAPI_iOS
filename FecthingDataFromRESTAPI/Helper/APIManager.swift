@@ -36,7 +36,7 @@ final class APIManager{
                 return
             }
             do{
-                let products = try JSONDecoder().decode([ProductModel].self, from: data)
+                let products = try JSONDecoder().decode([ProductModel].self, from: data) // data theke model e convert
                 completion(.success(products))
             }catch{
                 completion(.failure(.network(error)))

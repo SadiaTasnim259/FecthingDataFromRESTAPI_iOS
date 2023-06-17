@@ -18,6 +18,6 @@ struct ProductModel: Decodable{
 }
 
 struct Rate: Decodable{
-    let rate: Float
+    let rate: Double
     let count: Int
 }
