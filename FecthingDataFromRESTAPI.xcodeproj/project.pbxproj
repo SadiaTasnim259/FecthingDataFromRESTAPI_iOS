@@ -12,6 +12,10 @@
 		047B09872A3B4D0B0051AC72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047B09852A3B4D0B0051AC72 /* Main.storyboard */; };
 		047B09892A3B4D0D0051AC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047B09882A3B4D0D0051AC72 /* Assets.xcassets */; };
 		047B098C2A3B4D0D0051AC72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047B098A2A3B4D0D0051AC72 /* LaunchScreen.storyboard */; };
+		04CDF0F72A3D81C500844170 /* productListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDF0F52A3D81C500844170 /* productListViewCell.swift */; };
+		04CDF0F82A3D81C500844170 /* productListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CDF0F62A3D81C500844170 /* productListViewCell.xib */; };
+		04CDF0FB2A3DF7CC00844170 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 04CDF0FA2A3DF7CC00844170 /* Kingfisher */; };
+		04CDF0FD2A3DF80700844170 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDF0FC2A3DF80700844170 /* UIImageView+Extension.swift */; };
 		04F115802A3C2D9000DB1626 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1157F2A3C2D9000DB1626 /* ProductModel.swift */; };
 		04F115822A3C2DF800DB1626 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F115812A3C2DF800DB1626 /* ProductListViewController.swift */; };
 		04F115842A3C2FC400DB1626 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F115832A3C2FC400DB1626 /* APIManager.swift */; };
@@ -27,6 +31,9 @@
 		047B09882A3B4D0D0051AC72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047B098B2A3B4D0D0051AC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047B098D2A3B4D0D0051AC72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CDF0F52A3D81C500844170 /* productListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productListViewCell.swift; sourceTree = "<group>"; };
+		04CDF0F62A3D81C500844170 /* productListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = productListViewCell.xib; sourceTree = "<group>"; };
+		04CDF0FC2A3DF80700844170 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		04F1157F2A3C2D9000DB1626 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		04F115812A3C2DF800DB1626 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		04F115832A3C2FC400DB1626 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CDF0FB2A3DF7CC00844170 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +120,7 @@
 		047B09972A3B58120051AC72 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				04CDF0FC2A3DF80700844170 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				04F115812A3C2DF800DB1626 /* ProductListViewController.swift */,
+				04CDF0F52A3D81C500844170 /* productListViewCell.swift */,
+				04CDF0F62A3D81C500844170 /* productListViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +194,9 @@
 			dependencies = (
 			);
 			name = FecthingDataFromRESTAPI;
+			packageProductDependencies = (
+				04CDF0FA2A3DF7CC00844170 /* Kingfisher */,
+			);
 			productName = FecthingDataFromRESTAPI;
 			productReference = 047B097C2A3B4D0B0051AC72 /* FecthingDataFromRESTAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 047B09732A3B4D0B0051AC72;
+			packageReferences = (
+				04CDF0F92A3DF7CC00844170 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 047B097D2A3B4D0B0051AC72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CDF0F82A3D81C500844170 /* productListViewCell.xib in Resources */,
 				047B098C2A3B4D0D0051AC72 /* LaunchScreen.storyboard in Resources */,
 				047B09892A3B4D0D0051AC72 /* Assets.xcassets in Resources */,
 				047B09872A3B4D0B0051AC72 /* Main.storyboard in Resources */,
@@ -241,7 +259,9 @@
 				04F115882A3CCDE700DB1626 /* ProductViewModel.swift in Sources */,
 				047B09802A3B4D0B0051AC72 /* AppDelegate.swift in Sources */,
 				04F115802A3C2D9000DB1626 /* ProductModel.swift in Sources */,
+				04CDF0FD2A3DF80700844170 /* UIImageView+Extension.swift in Sources */,
 				04F115842A3C2FC400DB1626 /* APIManager.swift in Sources */,
+				04CDF0F72A3D81C500844170 /* productListViewCell.swift in Sources */,
 				04F115822A3C2DF800DB1626 /* ProductListViewController.swift in Sources */,
 				047B09822A3B4D0B0051AC72 /* SceneDelegate.swift in Sources */,
 				04F115862A3C35D500DB1626 /* Constant.swift in Sources */,
@@ -462,6 +482,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04CDF0F92A3DF7CC00844170 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04CDF0FA2A3DF7CC00844170 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04CDF0F92A3DF7CC00844170 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 047B09742A3B4D0B0051AC72 /* Project object */;
 }
