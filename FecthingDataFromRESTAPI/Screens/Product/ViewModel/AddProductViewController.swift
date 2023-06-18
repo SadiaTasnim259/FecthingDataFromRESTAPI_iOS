@@ -24,7 +24,7 @@ class AddProductViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func addProduct(){
+    func  addProduct(){
         guard let url = URL(string: "https://dummyjson.com/products/add") else {return}
         
         let parameters = AddProduct(title: "BMW Car ")

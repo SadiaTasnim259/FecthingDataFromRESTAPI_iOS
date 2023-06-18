@@ -9,6 +9,7 @@ import Foundation
 
 enum Constant{
     enum API{
-        static let productURL = "https://fakestoreapi.com/products"
+        static let GET_ALL_PRODUCTS = "https://fakestoreapi.com/products"
+        static let POST_ADD_PRODUCT = "https://dummyjson.com/products/add"
     }
 }

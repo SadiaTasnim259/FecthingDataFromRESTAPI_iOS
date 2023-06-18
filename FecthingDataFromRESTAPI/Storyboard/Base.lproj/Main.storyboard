@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8o6-AP-V4b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x0w-v8-Cpg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -34,7 +34,13 @@
                             <constraint firstItem="8Xq-bm-VgT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a4r-c3-yJC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Products" id="fRb-py-Bp9"/>
+                    <navigationItem key="navigationItem" title="Products" id="fRb-py-Bp9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bdg-Kc-vtv">
+                            <connections>
+                                <action selector="AddProductButtonTapped:" destination="BYZ-38-t0r" id="hgT-7J-mlb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="indicatorView" destination="btd-Sq-gVP" id="0AY-rC-spa"/>
                         <outlet property="tableView" destination="8Xq-bm-VgT" id="Ng6-NG-0r8"/>

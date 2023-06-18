@@ -14,7 +14,7 @@ extension UIImageView{
         guard let url = URL.init(string: urlString) else{
             return
         }
-        let resource = ImageResource(downloadURL: url)
+        let resource = KF.ImageResource(downloadURL: url)
         kf.indicatorType = .activity
         kf.setImage(with: resource)
     }

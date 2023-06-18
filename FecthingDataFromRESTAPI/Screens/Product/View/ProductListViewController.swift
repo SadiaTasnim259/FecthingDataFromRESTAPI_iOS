@@ -11,6 +11,7 @@ class ProductListViewController: UIViewController {
     
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
+    
     @IBOutlet weak var tableView: UITableView!
     private var productViewModel = ProductViewModel()
     override func viewDidLoad() {
@@ -22,8 +23,13 @@ class ProductListViewController: UIViewController {
         
         tableView.register(UINib(nibName: "productListViewCell", bundle: nil), forCellReuseIdentifier: "productListViewCell")
     }
-
+    
+    @IBAction func AddProductButtonTapped(_ sender: UIBarButtonItem) {
+        let product = AddProduct(title: "iPhone")
+        productViewModel.addProduct(parameters: product)
+    }
 }
+
 
 extension ProductListViewController{
     func configuration(){
@@ -45,10 +51,10 @@ extension ProductListViewController{
             case .stopLoading:
                 print("Stop loading..")
             case .dataLoaded:
-                DispatchQueue.main.async {
-                    self.indicatorView.stopAnimating()
-                    self.tableView.reloadData() //UI main e work kore
-                }
+                
+                self.indicatorView.stopAnimating()
+                self.tableView.reloadData() //UI main e work kore
+                
                 //print(self.productViewModel.products)
             case .error(let error):
                 print(error)
@@ -75,6 +81,6 @@ extension ProductListViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           tableView.deselectRow(at: indexPath, animated: true) // Row select effect
-       }
+        tableView.deselectRow(at: indexPath, animated: true) // Row select effect
+    }
 }
